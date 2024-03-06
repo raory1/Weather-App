@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:root {
+    --primary-color: #F24BD7;
+    --secondary-color: #944AF2;
+    --gradient: linear-gradient(90deg, #F24BD7, #944AF2);
+    --gradient2: linear-gradient(90deg, #944AF2, #F24BD7);
+    --error-color: #EC3740;
+    --black-color: #211D20;
+    --black75-color: #585558;
+    --black50-color: #908E90;
+    --black25-color: #C7C6C7;
+    --black10-color: #E9E8E9;
+    --black5-color: #F4F4F4;
+    --shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.089);
+    --background-img: url('./assets/img/day-background.png')
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: var(--background-img);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 119px;
+    color: var(--black5-color);
+    text-decoration: none;
+    line-height: 108px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 84px;
+    color: var(--black5-color);
+    text-decoration: none;
+    line-height: 112px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 59px;
+    color: var(--black5-color);
+    text-decoration: none;
+    line-height: 72px;
+    font-weight: lighter;
+}
+
+h4 {
+    font-size: 42px;
+    color: var(--black5-color);
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 30px;
+    color: var(--black5-color);
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 30px;
+    color: var(--black5-color);
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 21px;
+    color: var(--black10-color);
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+a, button {
+    font-size: 15px;
+    color: var(--black5-color);
+    text-decoration: none;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    background-color: #F4F4F410;
+    border-radius: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 80px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+    width: 700px;
+}
+
+#card-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    padding: 0px 0px 24px 0px;
+    gap: 8px
+}
+
+#city-input {
+    width: 416px;
+    background-color: transparent;
+    border: none;
+    color: var(--black5-color);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#card-header-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#card-content-container {
+    background-color: #F4F4F410;
+    border-radius: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 96px;
+}
+
+#weather-display {
+    display: flex;
+    padding: 48px;
+}
+
+#weather-icon {
+    width: 140px;
+    height: 140px;
+}
+
+#weather-status{
+    text-align: center;
+}
