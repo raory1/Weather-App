@@ -68,6 +68,12 @@ function displayUpdate(response) {
 
 getUserInfo()
 
+cityInputEl.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        search(cityInputEl.value, api.key)
+    }
+})
+
 searchBtnEl.addEventListener("click", () => {
     search(cityInputEl.value, api.key)
 })
