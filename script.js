@@ -6,7 +6,8 @@ const weatherStatusEl = document.getElementById("weather-status")
 const weatherIconEl = document.getElementById("weather-icon")
 
 const api = {
-    key: API_KEY,
+    //key: API_KEY,
+    key: process.env.API_KEY,
     base: "http://api.weatherapi.com/v1/",
     lang: "pt-br",
     units: "metric"
